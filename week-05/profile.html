@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>My Profile</title>
+	<style>
+		body{ font-family:Arial, san-serif; margin:20px;
+		}
+		img{width:150px; border-radius: 50%;}
+	</style>
+</head>
+	<h1>Hello, I'm Jerome</h1>
+    <img src="Madang.png" alt="Madang" />
+    <p>Welcome to my personal page. Here's a little about me:</p>
+
+	<h2>My Hobbies</h2>
+    <ul>
+    	<li>Reading</li>
+        <li>Traveling</li>
+        <li>Coding</li>
+    </ul>
+    
+    <h2>Contact Me</h2>
+    <form id="myForm">
+    	<label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+        
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message"></textarea><br /><br />
+        
+        <input type="submit" value="Send" />
+	</form>
+    <script>
+		const myForm = document.getElementById('myForm');
+		const name = document.getElementById('name').value;
+		const msg = document.getElementById('message').value;
+		
+		myForm.addEventListener('submit', function(event){
+			event.preventDefault();
+			alert('My name is ' + name + ' your message was ' + msg);
+												   });
+		</script>
+<body>
+</body>
+</html>
