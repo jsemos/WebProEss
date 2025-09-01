@@ -7,7 +7,7 @@ Welcome students to the 251514 Web Programming Essentials official repository fo
 The primary goal of this repository is to:
 
 - Share **weekly reading materials** and **reference PDFs**.
-- Provide **Java programming lab solutions** & **Weekly exercise solutions** to weekly activities and assignments.
+- Provide **Webpage programming essentials and webpage design lab solutions** & **Weekly exercise solutions** to weekly activities and assignments.
 - Support students in understanding course content through consistent, organized resources.
 
 ## 🗂️ Repository Structure
