@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mini Portfoliio Login Page</title>
+</head>
+
+<body>
+<h1>Mini Portfoliio Login Page</h1>
+
+<form onsubmit="return validateLogin()">
+	<label for="username">Username:</label>
+    <input type="text" id="username" name="username" required /><br />
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required /><br /><br />
+    <input type="submit" value="Log In" />
+</form>
+
+
+<script>
+function validateLogin() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  // Demo credentials
+  const validUsername = "admin";
+  const validPassword = "123";
+
+  if (username === validUsername && password === validPassword) {
+    // ✅ Login success: redirect to index
+	window.location.href = "index.html";
+    return false; // prevent default form submission
+  } else {
+    alert("Invalid credentials. Try again.");
+    return false;
+  }
+}
+</script>
+</body>
+</html>
